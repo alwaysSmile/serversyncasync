@@ -11,11 +11,11 @@ http.createServer(function (req, res) {
         } catch (err) {
             console.error(err);
             res.statusCode = 500;
-            res.end("На сервере произошла ошибка!")//3. Выводится посетитель
+            res.end("На сервере произошла ошибка!")
             return;
         }
 
-        res.end(info);
+        res.end(info);//3. Выводится посетитель
     } else {/* 404 */}
 }).listen(3000);
 
